@@ -129,7 +129,7 @@ typedef enum
   FAST_FULL_SEARCH =  0,
   UM_HEX           =  1,
   UM_HEX_SIMPLE    =  2,
-  EPZS             =  3 
+  EPZS             =  3
 } SearchType;
 
 

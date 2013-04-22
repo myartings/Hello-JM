@@ -359,8 +359,6 @@ enum
 #endif
 #endif
 
-//My change
-#define MODIFIED 1
 
 #endif
 

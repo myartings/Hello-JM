@@ -276,7 +276,6 @@ Decoders	inc/errdo.h	/^typedef struct decoders Decoders;$/;"	t	typeref:struct:de
 DeltaP	inc/rc_types.h	/^  double DeltaP;$/;"	m	struct:rc_quadratic
 Diamond	src/me_umhex.c	/^static const MotionVector Diamond[4] = {{-4, 0}, {4, 0}, {0, -4}, {0, 4}};$/;"	v	file:
 Diamond	src/me_umhexsmp.c	/^static const MotionVector Diamond[4] = {{-4, 0}, {4, 0}, {0, -4}, {0, 4}};$/;"	v	file:
-DiamondOctagon	src/me_umhex.c	/^static const MotionVector DiamondOctagon[12] = {{-4, 0}, {4, 0}, {0, -4},{0, 4}, {-8, 4}, {-4, 8}, {4, 8}, {8, 4}, {8, -4}, {4, -8}, {-4, -8}, {-8, -4}};$/;"	v	file:
 Diamond_SubPelSearch	src/me_umhexsmp.c	/^static const MotionVector Diamond_SubPelSearch[4] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};$/;"	v	file:
 DirectModes	inc/defines.h	/^} DirectModes;$/;"	v	typeref:enum:__anon36
 DisableIntra16x16	inc/params.h	/^  int DisableIntra16x16;$/;"	m	struct:inp_par_enc
@@ -769,7 +768,6 @@ MinCR	src/conformance.c	/^static const unsigned int  MinCR [] = { 0, 0, 0, 0, 0,
 MinIDRDistance	inc/params.h	/^  int  MinIDRDistance;$/;"	m	struct:inp_par_enc
 ModeDecisionMetric	inc/params.h	/^  int ModeDecisionMetric;$/;"	m	struct:inp_par_enc
 Mode_Decision_for_IntraSubMBlocks	src/rd_intra_jm.c	/^int Mode_Decision_for_IntraSubMBlocks(Macroblock *currMB, int b8, int lambda, distblk *cost, int non_zero[3])$/;"	f
-ModifiedUMHEXIntegerPelBlockMotionSearch	src/me_umhex.c	/^ModifiedUMHEXIntegerPelBlockMotionSearch  (Macroblock *currMB,     \/\/ <--  current Macroblock$/;"	f
 MotionInfoContexts	inc/global.h	/^} MotionInfoContexts;$/;"	t	typeref:struct:__anon1
 MotionVector	inc/global.h	/^} MotionVector;$/;"	t	typeref:struct:__anon3
 MultiSourceData	inc/params.h	/^  int  MultiSourceData;$/;"	m	struct:inp_par_enc
@@ -1164,7 +1162,7 @@ SCAN_YUV420	src/block.c	/^static const byte SCAN_YUV420  [4][2] =$/;"	v	file:
 SCAN_YUV422	src/block.c	/^static const byte SCAN_YUV422  [8][2] =$/;"	v	file:
 SDIAMOND	inc/me_epzs_common.h	/^  SDIAMOND  = 0,$/;"	e	enum:__anon30
 SEARCH_ONE_PIXEL	inc/me_umhex.h	68;"	d
-SEARCH_ONE_PIXEL	src/me_umhex.c	1751;"	d	file:
+SEARCH_ONE_PIXEL	src/me_umhex.c	1395;"	d	file:
 SEARCH_ONE_PIXEL	src/me_umhexsmp.c	47;"	d	file:
 SEARCH_ONE_PIXEL	src/me_umhexsmp.c	48;"	d	file:
 SEARCH_ONE_PIXEL_BIPRED	inc/me_umhex.h	88;"	d
@@ -1361,7 +1359,6 @@ TotalQpforPPicture	inc/rc_types.h	/^  int    TotalQpforPPicture;$/;"	m	struct:rc
 TraceFile	inc/params.h	/^  char TraceFile     [FILE_NAME_SIZE];  \/\/!< Trace Outputs$/;"	m	struct:inp_par_enc
 Transform8x8Mode	inc/global.h	/^  int                 Transform8x8Mode;$/;"	m	struct:slice
 Transform8x8Mode	inc/params.h	/^  int Transform8x8Mode;$/;"	m	struct:inp_par_enc
-TriRect	src/me_umhex.c	/^static const MotionVector TriRect[9] = {{0, 0}, {-4, 0}, {-4, 4}, {0, 4}, {4, 4}, {4, 0}, {4, -4}, {0, -4}, $/;"	v	file:
 TurnDBOff	inc/global.h	/^  int TurnDBOff;$/;"	m	struct:video_par
 UMHEXBipredIntegerPelBlockMotionSearch	src/me_umhex.c	/^UMHEXBipredIntegerPelBlockMotionSearch (Macroblock *currMB,      \/\/ <--  current Macroblock$/;"	f
 UMHEXIntegerPelBlockMotionSearch	src/me_umhex.c	/^UMHEXIntegerPelBlockMotionSearch  (Macroblock *currMB,     \/\/ <--  current Macroblock$/;"	f
@@ -2667,7 +2664,6 @@ ipredmode	inc/global.h	/^  char **ipredmode;            \/\/!< intra prediction 
 ipredmode4x4_line	inc/global.h	/^  char **ipredmode4x4_line;     \/\/!< intra prediction mode$/;"	m	struct:video_par
 ipredmode8x8	inc/global.h	/^  char **ipredmode8x8;         \/\/!< help storage for 8x8 modes, inserted by YV$/;"	m	struct:video_par
 ipredmode8x8_line	inc/global.h	/^  char **ipredmode8x8_line;     \/\/!< help storage for 8x8 modes, inserted by YV$/;"	m	struct:video_par
-isCenterBiased	inc/global.h	/^  short               isCenterBiased;  \/\/中心偏置$/;"	m	struct:macroblock_enc
 is_FREXT_profile	inc/global.h	/^static inline int is_FREXT_profile(unsigned int profile_idc) $/;"	f
 is_MVC_profile	inc/global.h	/^static inline int is_MVC_profile(unsigned int profile_idc)$/;"	f
 is_bipred_enabled	src/mode_decision.c	/^int is_bipred_enabled(VideoParameters *p_Vid, int mode) $/;"	f

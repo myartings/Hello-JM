@@ -447,8 +447,7 @@ typedef struct macroblock_enc
   //For residual DPCM
   short               ipmode_DPCM;
 
- //My change
-  short               isCenterBiased;  //中心偏置
+
 
   struct macroblock_enc   *mb_up;   //!< pointer to neighboring MB (CABAC)
   struct macroblock_enc   *mb_left; //!< pointer to neighboring MB (CABAC)

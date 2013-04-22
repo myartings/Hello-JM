@@ -146,11 +146,7 @@ void init_ME_engine(Macroblock *currMB)
      EPZS_setup_engine(currMB, p_Inp);
      break;
    case UM_HEX:
-     #ifdef MODIFIED
-     currMB->IntPelME       = ModifiedUMHEXIntegerPelBlockMotionSearch;
-     #else
      currMB->IntPelME       = UMHEXIntegerPelBlockMotionSearch;
-     #endif
      currMB->BiPredME       = UMHEXBipredIntegerPelBlockMotionSearch;
      currMB->SubPelBiPredME = sub_pel_bipred_motion_estimation;
      currMB->SubPelME       = UMHEXSubPelBlockME;
